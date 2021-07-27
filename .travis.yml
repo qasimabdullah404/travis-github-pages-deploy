@@ -1,0 +1,12 @@
+os: linux
+dist: xenial
+arch: amd64
+
+script: true
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: main
